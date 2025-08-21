@@ -1,0 +1,85 @@
+
+
+
+.video-background-meta-box label {
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.video-background-meta-box .button {
+    margin-top: 5px;
+}
+
+.video-background-meta-box input[type="text"],
+.video-background-meta-box input[type="number"],
+.video-background-meta-box textarea {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 5px;
+}
+
+
+.video-background-meta-box textarea {
+    min-height: 100px;
+}
+
+
+
+/* Panel styling */
+#video_background_settings .panel {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+#video_background_settings .panel_title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+#video_background_settings .panel_body {
+    padding-top: 10px;
+}
+
+/* Row and Column styling */
+#video_background_settings .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#video_background_settings .col {
+    flex: 1 1 100%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+    #video_background_settings .col {
+        flex: 1 1 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    #video_background_settings .col {
+        flex: 1 1 33.33%;
+    }
+}
+
+/* Optional: Improve form control spacing */
+#video_background_settings input[type="text"],
+#video_background_settings input[type="number"],
+#video_background_settings select,
+#video_background_settings textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

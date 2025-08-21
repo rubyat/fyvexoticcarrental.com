@@ -1,0 +1,75 @@
+@media (min-width: 1280px) {
+    header .header-right .turbo-drawer-navigation {
+        display: block !important;
+    }
+}
+
+
+.header-right .header-navigation-menu{
+    display: none !important;
+}
+
+header .header-right .turbo-drawer-navigation {
+    display: block !important;
+}
+
+
+button#login-modal-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+}
+
+
+
+.uploaded-thumbnail-card {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-left: 0; /* Remove inline margin */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    vertical-align: middle;
+}
+
+.uploaded-thumbnail-img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+}
+
+.remove-uploaded-file {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.uploaded-file-preview {
+    margin-top: 10px; /* Space above the preview */
+    margin-bottom: 10px; /* Space below the preview */
+}
+
+.form-row-wide .uploaded-file-preview {
+    clear: both; /* Ensures it starts on a new line after label/input */
+    margin-left: 0; /* Override any default margin */
+}
+
+.form-row-wide .uploaded-success {
+    display: block; /* Make success message take its own line */
+    margin-top: 5px; /* Space above success message */
+}
+
+.form-row-wide input[type="file"] {
+    margin-top: 10px; /* Add some space above the file input */
+}

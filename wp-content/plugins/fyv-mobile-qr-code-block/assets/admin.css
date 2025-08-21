@@ -1,0 +1,80 @@
+#fyv-mqrcb-settings .fyv-card{
+  background:#fff;
+  border:1px solid #e2e8f0;
+  border-radius:12px;
+  padding:24px;
+  box-shadow:0 1px 2px rgba(0,0,0,.04);
+}
+#fyv-mqrcb-settings .fyv-card .form-table{
+  margin-top:8px;
+}
+#fyv-mqrcb-settings .fyv-card-actions{
+  margin-top:16px;
+  border-top:1px solid #edf2f7;
+  padding-top:16px;
+}
+#fyv-mqrcb-settings .fyv-field .description{
+  color:#4a5568;
+  margin:.5em 0 0;
+}
+
+/* Switch */
+#fyv-mqrcb-settings .fyv-switch{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+#fyv-mqrcb-settings .fyv-switch input[type="checkbox"]{
+  appearance:none;
+  -webkit-appearance:none;
+  position:relative;
+  width:44px;
+  height:26px;
+  background:#cbd5e0;
+  border-radius:9999px;
+  outline:none;
+  transition:background .2s ease;
+  margin:0;
+  display:inline-block;
+  vertical-align:middle;
+}
+#fyv-mqrcb-settings .fyv-switch input[type="checkbox"]:checked{
+  background:#2563eb; /* blue-600 */
+}
+/* Use pseudo-element as the knob to avoid overlap issues */
+#fyv-mqrcb-settings .fyv-switch input[type="checkbox"]::after{
+  content:"";
+  position:absolute;
+  top:2px;
+  left:2px;
+  width:20px;
+  height:20px;
+  background:#fff;
+  border-radius:9999px;
+  box-shadow:0 1px 1px rgba(0,0,0,.1);
+  transform:translateX(0);
+  transition:transform .2s ease;
+}
+#fyv-mqrcb-settings .fyv-switch input[type="checkbox"]:checked::after{
+  transform:translateX(20px);
+}
+/* Hide the legacy extra slider span to prevent overlap */
+#fyv-mqrcb-settings .fyv-switch .fyv-slider{display:none;}
+#fyv-mqrcb-settings .fyv-switch .fyv-switch-label{
+  font-weight:600;
+}
+
+/* Media field layout */
+#fyv-mqrcb-settings .fyv-media-field .fyv-media-controls{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+#fyv-mqrcb-settings .fyv-media-field .fyv-media-preview img{
+  border:1px solid #e2e8f0;
+  border-radius:6px;
+  padding:4px;
+  background:#fff;
+}
